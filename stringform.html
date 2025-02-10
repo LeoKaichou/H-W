@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 5px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+        button{
+            height: 50px;
+            width: 80px;
+            border-radius: 20px;
+            transition: 0.7s ease;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stringing those Strings</h1><br>
+    <form action="stringform.php" method="post">
+        Enter your string: <input required type="text" name="txt" placeholder="String Here"><br>
+        What type of operation do you wish to perform: <select required name="sel">
+            <option value="ToLowerCase">To Lower Case</option>
+            <option value="ToUpperCase">To Upper Case</option>
+            <option value="UcWords">UcWords</option>
+            <option value="Lcfirst">Lcfirst</option>
+            <option value="Ucfirst">Ucfirst</option>
+            <option value="StringLength">String Length</option>
+            <option value="StringReverse">String Reverse</option>
+            <option value="WordCount">Word Count</option>
+            <option value="StringPosition">String Position</option>
+            <option value="StringLastPosition">String Last Position</option>
+            <option value="StringReplace">String Replace</option>
+            <option value="SubString">Sub String</option>
+            <option value="Trim">Trim</option>
+            <option value="StringCompare">String Compare</option>
+            <option value="StringNCompare">String N, Compare</option>
+            <option value="StringString">String String</option>
+        </select><br>
+        If your option is String Compare, Sub String, String Replace, String N Compare, String Position, String Last Position. Fill this as well: <input type="text" name="txt2" placeholder="Second String"><br>
+        If your option is String Replace<input type="text" name="txt3" placeholder="Third String"><br>
+        If your option is String N Compare<input type="text" name="num" placeholder="Amount to Compare"><br>
+    
+        <button type="submit" name="s">Submit</button>
+    </form>
+</body>
+</html>
